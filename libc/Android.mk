@@ -242,7 +242,6 @@ libc_bionic_ndk_src_files := \
     bionic/wctype.cpp \
     bionic/wmempcpy.cpp \
 
-
 libc_bionic_src_files :=
 
 # The following implementations depend on pthread data, so we can't include
@@ -1019,7 +1018,6 @@ LOCAL_CFLAGS := $(libc_common_cflags) \
 
 LOCAL_CONLYFLAGS := $(libc_common_conlyflags)
 LOCAL_CPPFLAGS := $(libc_common_cppflags) -Wold-style-cast
-
 LOCAL_C_INCLUDES := $(libc_common_c_includes) bionic/libstdc++/include
 LOCAL_MODULE := libc_bionic
 LOCAL_CLANG := $(use_clang)
@@ -1236,7 +1234,6 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := $(libc_common_src_files)
 LOCAL_CFLAGS := $(libc_common_cflags)
-
 LOCAL_CONLYFLAGS := $(libc_common_conlyflags)
 LOCAL_CPPFLAGS := $(libc_common_cppflags)
 LOCAL_C_INCLUDES := $(libc_common_c_includes)
@@ -1381,7 +1378,6 @@ LOCAL_SRC_FILES := \
     bionic/libc_init_dynamic.cpp \
     bionic/NetdClient.cpp \
     arch-common/bionic/crtend_so.S \
-
 
 LOCAL_MODULE := libc
 LOCAL_CLANG := $(use_clang)
